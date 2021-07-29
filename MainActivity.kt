@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var message3:TextView
     lateinit var message4:TextView
 
+    lateinit var image:ImageView
+    var i:Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         message2 = findViewById(R.id.message2)
         message3 = findViewById(R.id.message3)
         message4 = findViewById(R.id.message4)
+
+        image = findViewById(R.id.img)
 
     }
 
@@ -47,4 +53,28 @@ class MainActivity : AppCompatActivity() {
         var f4:String = address.text.toString()
         message4.text = f4
 
+        setContentView(R.layout.activity_main)
+        image=findViewById(R.id.img)
+
+
     }
+    fun enter(view: View){
+
+        if( i == 0)
+        {
+            image.setImageResource(R.mipmap.img1);
+            i = 1
+        }
+        else if(i == 1)
+        {
+            image.setImageResource(R.mipmap.img2);
+            i = 2
+        }
+        else
+        {
+            image.setImageResource(R.mipmap.img3);
+            i = 0
+        }
+
+    }
+}
