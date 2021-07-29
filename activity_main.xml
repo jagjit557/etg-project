@@ -43,14 +43,14 @@
 
         android:id="@+id/message1"
         android:textSize="25dp"
-        android:text="You Entered"
+        android:text="Your Firstname is "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
     <TextView
 
         android:id="@+id/message2"
         android:textSize="25dp"
-        android:text="You Entered"
+        android:text="Your Lastname is"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
 
@@ -58,15 +58,29 @@
 
         android:id="@+id/message3"
         android:textSize="25dp"
-        android:text="You Entered"
+        android:text="Your Age is "
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
     <TextView
 
         android:id="@+id/message4"
         android:textSize="25dp"
-        android:text="You Entered"
+        android:text="Address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></TextView>
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@mipmap/img1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"></ImageView>
+
+
+    <Button
+        android:onClick="enter"
+        android:text="Enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
 
 </LinearLayout>
