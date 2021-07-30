@@ -62,19 +62,22 @@ class MainActivity : AppCompatActivity() {
 
         if( i == 0)
         {
-            image.setImageResource(R.mipmap.img1);
+            image.setImageResource(R.mipmap.image1);
             i = 1
         }
         else if(i == 1)
         {
-            image.setImageResource(R.mipmap.img2);
+            image.setImageResource(R.mipmap.image2);
             i = 2
         }
         else
         {
-            image.setImageResource(R.mipmap.img3);
+            image.setImageResource(R.mipmap.image3);
             i = 0
         }
 
     }
 }
+
+
+
